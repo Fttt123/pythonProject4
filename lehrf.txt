@@ -1,0 +1,15 @@
+    def M_op(self, operator: str):
+        if operator == 'MS':
+            self.M_str = str(eval(self.result))
+        elif operator == 'MR':
+            self.result += self.M_str
+            self.plainTextEdit.setPlainText(self.result)
+
+        elif operator == 'MC':
+            self.M_str = ''
+
+        elif operator == 'M+':
+            self.M_str = str(int(self.result) + int(self.M_str))
+
+        elif operator == 'M-':
+            self.M_str = str(int(self.result) - int(self.M_str))
