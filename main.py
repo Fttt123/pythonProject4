@@ -10,4 +10,5 @@ if __name__ == "__main__":
    ui.setupUi(Window)
    ui.controller()
    Window.show()
+   print("123123123")
    sys.exit(app.exec_())
